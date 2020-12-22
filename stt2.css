@@ -1,0 +1,139 @@
+.pop{
+    position: relative;
+    text-align: center;
+    top: 15%;
+    transform: translateY(-50%)
+}
+
+
+
+
+.btt{
+    height: 150px;
+    background-image: url(cimfiddle_right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 17%;
+    width: 900px
+}
+.one 
+{
+    height: 50px;
+    margin-top: 100px;
+    border:2px solid #fff;
+
+
+}
+.two{
+    height: 50px;
+    border: 2px solid #fff
+    
+}
+.three{
+    height: 50px;
+    border: 2px solid #fff
+}
+.fore{
+    
+        height: 50px;
+        border: 2px solid #fff
+    }
+
+button{
+    background-color: #338033;
+}
+
+.cen{
+    justify-content: center;
+    align-items: center;
+    display : flex;
+    width: 100%;
+    margin-bottom: 10%;
+}
+.oppo{
+    top: 10%;
+    left: 30%;
+    background: #338033;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 1px solid=#338033;
+    color: #fff;
+    padding-left: 1px;
+    margin-right: 10px
+
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    height: 100vh;
+    background: black;
+}
+ul{
+    margin: 0%;
+    padding: 0;
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s
+}
+ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+}
+ul:hover li a {
+    transform: scale(1.5);
+    opacity: .2;
+    filter: blur(5px);
+}
+
+ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+}
+ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #338033;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scale(0);
+    z-index: -1;
+
+}
+ul li a:hover::before{
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scale(1);
+}
+a {
+    text-decoration: none;
+    color: #fff
+}
+table{
+    margin-top: 1000px;
+
+}
+td{
+    height: 50px;width: 5px
+}
